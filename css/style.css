@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-image: url('../img/rend.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #e0e0e0;
+}
+
+header {
+  background-color: rgba(105, 105, 105, 0.8);
+  color: #00ffff;
+  text-align: center;
+  padding: 0;
+  backdrop-filter: blur(5px);
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 9px;
+}
+
+.img-perfil {
+  width: 9%;
+  border-radius: 15%;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  margin-bottom: 1.5rem; /* aumenta o espaço entre a imagem e o nome */
+}
+
+/* Efeito ao passar o mouse */
+
+.img-perfil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.6);
+}
+
+.conteudo {
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 1em !important;
+  margin-top: 0 !important;
+  border-radius: 15px !important;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.conteudo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 255, 255, 0.25);
+}
+
+.img-icone {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.img-icone:hover {
+  transform: scale(1.1);
+}
+
+.txt-icone {
+  font-size: 1.2rem;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+}
+
+.principal {
+  text-align: center;
+  margin-left: 25% !important;
+  margin-right: 25% !important;
+  margin-top: 4% !important;
+  margin-bottom: 9% !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+footer {
+  background-color: rgba(105, 105, 105, 0.8);
+  color: #00ffff;
+  text-align: center;
+  padding: 0px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.9rem;
+  border-radius: 9px;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+  .img-perfil {
+    width: 80px;
+    height: 80px;
+  }
+
+  .img-icone {
+    width: 30px;
+    height: 30px;
+  }
+
+  .txt-icone {
+    font-size: 1rem;
+  }
+
+  .principal {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+  }
+}
